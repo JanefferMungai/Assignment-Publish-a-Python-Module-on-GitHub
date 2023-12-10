@@ -59,7 +59,7 @@ print("3. Configure DHCP scope")#user will input the dhcp scope
 print("4. Enable DNS resolution")#user will choose whether to perform dbs resolution
 
 # Get user choices
-user_choices = input("Enter the numbers (comma-separated) corresponding to your choices: ")
+user_choices = input("Enter the numbers  corresponding to your choices: ")
 choices = [int(choice) for choice in user_choices.split(',')]
 
 # Parse arguments and perform configurations based on user choices

@@ -18,14 +18,14 @@
 # Run the file as follow
 #first ensure you are in the right folder on your device
 PS C:\Users\CSAIT> python vyos.py
-# THIS IS THE OUTPUT FILL IT AS IT SHOWS
+# THIS IS THE OUTPUT ,FILL IT AS IT SHOWS BELOW:
 Choose configurations:
 1. Configure interface
 2. Enable NAT
 3. Configure DHCP scope
 4. Enable DNS resolution
 
-Enter the numbers (comma-separated) corresponding to your choices: 1
+Enter the numbers  corresponding to your choices: 1
 
 Enter interface: eth5
 
