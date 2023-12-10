@@ -5,13 +5,21 @@
 # The Vyos router virtual machine.
 # The Vyos router device configuration is as follows:
  One HostOnly Network Adapter
+
  One Internal Network (DMZNet)
+
  The Internal Network (eth4) is the LAN interface
+
  The HostOnly adapter (eth5) is the WAN interface
+
  The LAN  address is 192.168.56.1/24
+
  The WAN address is configured for DHCP (enable VirtualBox DHCP services)
+
  The username is vyos
+
  The password is vyos
+
 # The Windows 10 Virtual Machine:
  One HostOnly Network Adapter
  One NAT
