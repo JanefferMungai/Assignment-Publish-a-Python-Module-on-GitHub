@@ -48,7 +48,11 @@ Connected to VyOS device.
 Interface eth5 description set to 'WAN'
 
 NAT enabled
+
 DHCP configured with scope 192.168.56.100 - 192.168.56.254
+
 DNS resolution enabled
+
 Disconnected from VyOS device.
+
 PS C:\Users\CSAIT>
