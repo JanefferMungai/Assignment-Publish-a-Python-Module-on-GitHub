@@ -2,7 +2,7 @@ import argparse
 from netmiko import ConnectHandler
 
 #Got the commands and synatx from various resource ,the commands I have explained to show what it does and the expected output
-#used the vyos device 192.168.0.1 at mycanvas to configure https://mycanvas.mohawkcollege.ca/courses/93604/files/vyos.ova
+#used the vyos device 192.168.56.1 at mycanvas to configure https://mycanvas.mohawkcollege.ca/courses/93604/files/vyos.ova
 #The VyOS documentation at https://mycanvas.mohawkcollege.ca/courses/93604/pages/week-four-second-class-operators-and-netmiko/netmikoexercise
 # The VyOS documentation (https://docs.vyos.io/en/latest/automation/index.html) was used as a guide while developing this script for configuring VyOS devices.
 # This script uses ChatGPT's recommendations to define command-line arguments for configuring a VyOS device.
@@ -97,7 +97,7 @@ if not args.enable_dns:
 try:
     vyos_router = {
         "device_type": "vyos",
-        "host": "192.168.56.1",
+        "host": "192.168.56.1",#use your device IP
         "username": "vyos",  # Update with your VyOS username
         "password": "vyos",  # Update with your VyOS password
         "port": 22,
@@ -109,13 +109,13 @@ try:
     if args.interface and args.description:
         configure_vyos(device, args.interface, args.description)#this will call the function and configure the device
     if args.enable_nat:
-        enable_nat(device)
+        enable_nat(device)#this will call the function and asign the NAT configs to the device
     if args.dhcp_scope:
         configure_dhcp(device, args.dhcp_scope[0], args.dhcp_scope[1])
-    if args.enable_dns:
+    if args.enable_dns:#call the funtion and asign the dns settings
         enable_dns(device)
 
-    device.disconnect()
+    device.disconnect()#disconnect from the device
     print("Disconnected from VyOS device.")
 except Exception as e:
     print(f"An error occurred: {str(e)}")
