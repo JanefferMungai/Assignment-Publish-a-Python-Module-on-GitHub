@@ -22,6 +22,7 @@
 
 # The Windows 10 Virtual Machine:
  One HostOnly Network Adapter
+
  One NAT
 # Run the file as follow
 #first ensure you are in the right folder on your device
