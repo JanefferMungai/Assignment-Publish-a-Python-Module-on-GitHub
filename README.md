@@ -18,6 +18,7 @@
 # Run the file as follow
 #first ensure you are in the right folder on your device
 PS C:\Users\CSAIT> python vyos.py
+# THIS IS THE OUTPUT FILL IT AS IT SHOWS
 Choose configurations:
 1. Configure interface
 2. Enable NAT
