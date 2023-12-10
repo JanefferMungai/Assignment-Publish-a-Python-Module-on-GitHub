@@ -24,17 +24,29 @@ Choose configurations:
 2. Enable NAT
 3. Configure DHCP scope
 4. Enable DNS resolution
+
 Enter the numbers (comma-separated) corresponding to your choices: 1
+
 Enter interface: eth5
+
 Do you want to provide a description for the interface? (yes/no): yes
+
 Enter description for the interface: WAN
+
 Do you want to enable NAT? (yes/no): yes
+
 Do you want to configure DHCP scope? (yes/no): yes
+
 Enter DHCP start IP: 192.168.56.100
+
 Enter DHCP end IP: 192.168.56.254
+
 Do you want to enable DNS resolution? (yes/no): yes
+
 Connected to VyOS device.
+
 Interface eth5 description set to 'WAN'
+
 NAT enabled
 DHCP configured with scope 192.168.56.100 - 192.168.56.254
 DNS resolution enabled
